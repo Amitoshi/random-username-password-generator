@@ -19,7 +19,11 @@ function randomString() {
 	}
 
              //display the generated string 
-	document.getElementById("randomfield").innerHTML = randomstring;
+	document.getElementById("randomfield1").innerHTML = randomstring;
+	document.getElementById("randomfield2").innerHTML = randomstring;
+	document.getElementById("randomfield3").innerHTML = randomstring;
+	document.getElementById("randomfield4").innerHTML = randomstring;
+	document.getElementById("randomfield5").innerHTML = randomstring;
 }
 </script>
 
@@ -29,9 +33,13 @@ function randomString() {
 <h3> Click the button to generate a random string </h3>
 
 <form name="randomform">
-<input type="button" value="Generate Random String" onClick="randomString();randomString();randomString();randomString();randomString();randomString();">
+<input type="button" value="Generate Random String" onClick="randomString();">
 <br><br>
-<b><p id="randomfield" style="color: green"> </p></b>
+<b><p id="randomfield1" style="color: green"> </p></b>
+	<b><p id="randomfield2" style="color: green"> </p></b>
+	<b><p id="randomfield3" style="color: green"> </p></b>
+	<b><p id="randomfield4" style="color: green"> </p></b>
+	<b><p id="randomfield5" style="color: green"> </p></b>
 </form>
 
 </center>
