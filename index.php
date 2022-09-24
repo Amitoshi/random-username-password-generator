@@ -15,6 +15,7 @@
         <center>
             <h1>Random User Name </h1>
             <div>
+             <h1>Amit</h1?
     <?php
 for ($s = '', $i = 0, $z = strlen($a = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789') - 1;$i != 7;$x = rand(0, $z), $s.= $a[$x], $i++);
 echo '<input type="text" name="txt" class="txt" style="border: none; width: 250px;
