@@ -1,20 +1,44 @@
- <<!DOCTYPE html>
- <html>
- <head>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="random username password generator" content="HTML, CSS, JavaScript PHP">
-    <meta name="random text generator" >
-    <meta name="text generator" >
-    <meta name="produce random text password name" >
-
-    <title>AmitoshiYT</title>
+<html>
+<head> 
+<title> Random String Generator </title>
 </head>
-    <body style="background-color: gray;">
-      <title>AmitoshiYT</title>
-    </body>
+
+<script>
+function randomString() {
+            //define a variable consisting alphabets in small and capital letter
+	var characters = "ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+            
+            //specify the length for the new string
+	var lenString = 7;
+	var randomstring = '';
+
+            //loop to select a new character in each iteration
+	for (var i=0; i<lenString; i++) {
+		var rnum = Math.floor(Math.random() * characters.length);
+		randomstring += characters.substring(rnum, rnum+1);
+	}
+
+             //display the generated string 
+	document.getElementById("randomfield").innerHTML = randomstring;
+}
+</script>
+
+<body>
+<center>
+<h2 style="color: green"> Random String Generator </h2>
+<h3> Click the button to generate a random string </h3>
+
+<form name="randomform">
+<input type="button" value="Generate Random String" onClick="randomString();">
+<br><br>
+<b><p id="randomfield" style="color: green"> </p></b>
+</form>
+
+</center>
+</body>
 </html>
+
+ 
 
 
 
